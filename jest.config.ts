@@ -1,8 +1,10 @@
 export default {
   collectCoverage: true,
   testEnvironment: 'node',
-  strictNullChecks: true,
   collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
+  testMatch: [
+    '**/?(*.)+(spec|test).+(ts)'
+  ],
   coverageDirectory: 'coverage',
   coveragePathIgnorePatterns: [
     '/node_modules/'
