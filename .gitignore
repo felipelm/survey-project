@@ -2,3 +2,4 @@ node_modules
 dist
 coverage
 *.swp
+*.DS_Store

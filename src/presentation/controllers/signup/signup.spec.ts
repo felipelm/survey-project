@@ -2,6 +2,20 @@ import { ServerError, InvalidParamError, MissingParamError } from '../../errors'
 import { EmailValidator, AccountModel, AddAccount, AddAccountModel } from './signup-protocols'
 import { SignUpController } from './signup'
 
+import * as SignUpProtocols from './signup-protocols'
+
+describe('SignUpProtocols', () => {
+  it('should have exports', () => {
+    expect(typeof SignUpProtocols).toBe('object')
+  })
+
+  it('should not have undefined exports', () => {
+    Object.keys(SignUpProtocols).forEach((exportKey) =>
+      expect(Boolean(SignUpProtocols[exportKey])).toBe(true)
+    )
+  })
+})
+
 const makeAddAccount = (): AddAccount => {
   class AddAccountStub implements AddAccount {
     async add (account: AddAccountModel): Promise<AccountModel> {
