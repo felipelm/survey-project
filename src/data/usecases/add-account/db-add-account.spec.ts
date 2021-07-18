@@ -1,6 +1,20 @@
 import { AddAccountRepository, Encrypter, AccountModel, AddAccountModel } from './db-add-account-protocols'
 import { DbAddAccount } from './db-add-account'
 
+import * as DbAddAccountProtocols from './db-add-account-protocols'
+
+describe('DbAddAccountProtocols', () => {
+  it('should have exports', () => {
+    expect(typeof DbAddAccountProtocols).toBe('object')
+  })
+
+  it('should not have undefined exports', () => {
+    Object.keys(DbAddAccountProtocols).forEach((exportKey) =>
+      expect(Boolean(DbAddAccountProtocols[exportKey])).toBe(true)
+    )
+  })
+})
+
 const makeEncrypter = (): Encrypter => {
   class EncryterStub implements Encrypter {
     async encrypt (value: string): Promise<string> {
