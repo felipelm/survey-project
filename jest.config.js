@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   testEnvironment: 'node',
   collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
   testMatch: [
