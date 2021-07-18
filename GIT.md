@@ -18,5 +18,6 @@ Git Alias
 [alias]
   l = !git log --pretty=format:'%C(blue)%h %C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'
   s = !git status -s
+  cnt = !git add --all -- ':!*.spec.ts' && git commit -m
   c = !git add --all && git commit -m
 ```
