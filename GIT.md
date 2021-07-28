@@ -14,7 +14,8 @@ Git Alias
  clean = git-lfs clean -- %f
  smudge = git-lfs smudge -- %f
  process = git-lfs filter-process
-
+[push]
+  followTags = true
 [alias]
   l = !git log --pretty=format:'%C(blue)%h %C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'
   s = !git status -s
