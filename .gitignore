@@ -3,3 +3,6 @@ dist
 coverage
 *.swp
 *.DS_Store
+:w
+:q
+
