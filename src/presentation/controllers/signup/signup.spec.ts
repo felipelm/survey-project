@@ -1,5 +1,6 @@
 import { ServerError, MissingParamError } from '../../errors'
-import { Validation, AccountModel, AddAccount, AddAccountModel } from './signup-protocols'
+import { AccountModel, AddAccount, AddAccountModel } from './signup-protocols'
+import { Validation } from '../../../presentation/protocols/validation'
 import { SignUpController } from './signup'
 
 import * as SignUpProtocols from './signup-protocols'
