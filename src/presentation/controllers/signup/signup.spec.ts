@@ -49,7 +49,6 @@ const makeEmailValidator = (): EmailValidator => {
 const makeValidation = (): Validation => {
   class ValidationStub implements Validation {
     validate (input: any): Error {
-      // @ts-expect-error: Temporary
       return null
     }
   }
