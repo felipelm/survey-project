@@ -4,7 +4,7 @@ import { SignUpController } from './signup'
 
 import * as SignUpProtocols from './signup-protocols'
 import { HttpRequest } from '../../protocols'
-import { badRequest, ok, serverError } from '../../helpers/http-helper'
+import { badRequest, ok, serverError } from '../../helpers/http/http-helper'
 
 describe('SignUpProtocols', () => {
   it('should have exports', () => {
