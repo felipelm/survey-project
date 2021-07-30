@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "sucrase-node src/main/server.ts",
-    "test": "jest --passWithNoTests --noStackTrace --runInBand",
-    "test:verbose": "jest --passWithNoTests",
+    "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
+    "test:verbose": "jest --passWithNoTests --runInBand --verbose",
     "test:unit": "npm test -- --watch -c jest-unit-config.js",
     "test:integration": "npm test -- --watch -c jest-integration-config.js",
     "test:staged": "npm test -- --findRelatedTests",
@@ -37,7 +37,7 @@
     "jest": "^27.0.6",
     "lint-staged": "^11.0.1",
     "sucrase": "^3.20.0",
-    "supertest": "^6.1.3",
+    "supertest": "^6.1.4",
     "ts-jest": "^27.0.3",
     "ts-node": "^10.1.0",
     "typescript": "^4.3.5"
